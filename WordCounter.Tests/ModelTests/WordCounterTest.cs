@@ -29,13 +29,28 @@ namespace WordCounterProject.Test
     public void TestCalc_Pass()
     {
       //arrange
-      int expectedCounterVal = 1;
+      int expectedCountValPass = 1;
       WordCounter testCalcPass = new WordCounter();
       //act
-      int actualCounterVal = testCalcPass.WordCounterCalc
+      int actualCountValPass = testCalcPass.WordCounterCalc
       ("random", "This is a random sentence.");
       //assert
-      Assert.AreEqual(expectedCounterVal, actualCounterVal);
+      Assert.AreEqual(expectedCountValPass, actualCountValPass);
     }
+
+    [TestMethod]
+    public void TestCalc_Fail()
+    {
+      //arrange
+      int expectedCountValFail = 0;
+      WordCounter testCalcFail = new WordCounter();
+      //act
+      int actualCountValFail = testCalcFail.WordCounterCalc
+      ("like", "Hello, I like failing. Don't ask me why.");
+      //assert
+      Assert.AreEqual(expectedCountValFail, actualCountValFail);
+    }
+
+
   }
 }
