@@ -16,14 +16,14 @@ Expected Behaviors:
 	User should be informed as to the frequency of their word in their sentence.
 	User should be able to go back to the home page.
 
-Expected logic
+Expected logic:
 	Provide a way to save the user’s input word.
 	Provide a way to store the user’s input sentence.
 	Provide a way to compare the user’s word against the user’s sentence.
 	Provide a way to keep track of the frequency the user’s word appears in the user’s sentence.
 	Provide a way to return that number value to the user.
 
-Expected syntax
+Expected syntax:
 	The program will have a class called WordCounter.
 	The program will store the user’s word into a string variable.
 	The program will store the user’s sentence into a string array.
