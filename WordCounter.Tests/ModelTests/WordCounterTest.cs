@@ -33,7 +33,7 @@ namespace WordCounterProject.Test
       WordCounter testCalcPass = new WordCounter();
       //act
       int actualCountValPass = testCalcPass.WordCounterCalc
-      ("random", "This is a random sentence.");
+      ("random", "This is a very RaNdom sentence.");
       //assert
       Assert.AreEqual(expectedCountValPass, actualCountValPass);
     }
@@ -46,7 +46,7 @@ namespace WordCounterProject.Test
       WordCounter testCalcFail = new WordCounter();
       //act
       int actualCountValFail = testCalcFail.WordCounterCalc
-      ("like", "Hello, I like failing. Don't ask me why.");
+      ("ask", "Hello, I am failing. Don't ask me why.");
       //assert
       Assert.AreEqual(expectedCountValFail, actualCountValFail);
     }

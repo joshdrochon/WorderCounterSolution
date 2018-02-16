@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Word Counter</title>
+    <style media="screen">
+      body{
+        background-color: #F0F0E1;
+        padding: 20px;
+      }
+      button{
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Word Counter</h1>
+    <form action="WordCounter/Result" method="post">
+      <label for="word">Word:</label>
+      <input type="text" name="input-word" required="true" pattern="[A-Za-z]{1,20}">
+      <label for="phrase">Phrase:</label>
+      <input type="text" name="input-phrase" required="true" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$">
+      <p>[Please do not include punctuation. Thank you kindly]</p>
+      <button type="submit" name="button">Submit!</button>
+    </form>
+  </body>
+</html>

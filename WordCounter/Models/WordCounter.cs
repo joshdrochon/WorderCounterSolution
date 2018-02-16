@@ -6,20 +6,25 @@ namespace WordCounterProject.Models
   public class WordCounter
   {
     public static int _counter = 0;
+    public static string _word;
 
-    public static int reset()
+    //hard-coded test case
+    // public static int _counter = 2;
+
+    public static int Reset()
     {
       return _counter = 0;
     }
 
-    public int WordCounterCalc(string Word, string Phrase)
+    public int WordCounterCalc(string _word, string _phrase)
     {
-      string userWord = Word.ToUpper();
-      string userPhrase = Phrase;
+      string userWord = _word.ToUpper();
+      string userPhrase = _phrase.ToUpper();
 
-      string[] userPhraseArray = userWord.Split(' ');
+      string[] userPhraseArray = userPhrase.Split(' ');
 
-      foreach(var word in userPhraseArray) //word stands for each element in array
+      //word stands for each element in array
+      foreach(var word in userPhraseArray)
       {
 
         if(userWord == word)
@@ -34,5 +39,16 @@ namespace WordCounterProject.Models
       }
       return _counter;
     }
+
+    public int GetCount()
+    {
+      return _counter;
+    }
+
+    public string GetWord()
+    {
+      return _word;
+    }
+
   }
 }
