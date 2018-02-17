@@ -23,7 +23,7 @@ namespace WordCounterProject.Controllers
       int userCounter = newWordCounter.WordCounterCalc
       (inputWord, inputPhrase);
 
-      return View("../WordCounter/Result");
+      return View("../WordCounter/Result", userCounter);
     }
   }
 }

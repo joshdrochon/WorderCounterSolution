@@ -6,15 +6,12 @@ namespace WordCounterProject.Models
   public class WordCounter
   {
     public static int _counter = 0;
-    public static string _word;
-
-    //hard-coded test case
-    // public static int _counter = 2;
 
     public static int Reset()
     {
       return _counter = 0;
     }
+
 
     public int WordCounterCalc(string _word, string _phrase)
     {
@@ -40,14 +37,9 @@ namespace WordCounterProject.Models
       return _counter;
     }
 
-    public int GetCount()
+    public int GetCounter()
     {
       return _counter;
-    }
-
-    public string GetWord()
-    {
-      return _word;
     }
 
   }
