@@ -9,7 +9,7 @@ namespace WordCounterProject.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      return View();
+      return View(WordCounter.Reset());
     }
 
     [HttpPost("WordCounter/Result")]
@@ -24,6 +24,7 @@ namespace WordCounterProject.Controllers
       (inputWord, inputPhrase);
 
       return View("../WordCounter/Result", userCounter);
+
     }
   }
 }
